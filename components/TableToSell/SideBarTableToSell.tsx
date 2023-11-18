@@ -42,13 +42,13 @@ const SideBarTableToSell = ({ totalAmountToCart, productToCart, showTableSales,c
             <span className='text-red-500 font-bold font-nunito'>TOTAL</span>
             <span className='font-bold text-2xl'>S/{totalAmountToCart.toFixed(2)}</span>
           </div>
-        <div className='w-full mt-3 '>
+        {/* <div className='w-full mt-3 '>
           <select onChange={handleChangeProofPayment} name="typeProofPayment" className='w-full outline-none p-3  rounded-md shadow-md'>
             <option value="">Tipo de comprobante</option>
             <option value="03">Boleta</option>
             <option value="01">Factura</option>
           </select>
-        </div>
+        </div> */}
         </div>
         <button disabled={productToCart && productToCart?.length > 0 ? false : true} onClick={() => showGenerateSale(showSaleModal)} className={`${productToCart && productToCart.length === 0 ? 'bg-gray-300' : 'bg-blue-400 duration-300 text-md   hover:hover:bg-blue-500'} capitalize font-semibold  rounded-md text-white duration-300 font-nunito shadow-lg w-full p-3 m-auto`}>
           generar venta
